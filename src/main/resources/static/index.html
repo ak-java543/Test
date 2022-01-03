@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/script.js"></script></head>
+<body>
+<button id="connect">connect</button><br><br>
+
+<table id="emp-form" style="border-style: solid;">  
+<tr>
+<td>
+Employee ID	     <input type="text" placeholder="Employee ID" id="employee_id"/> <br><br>
+Employee Name    <input type="text" placeholder="Employee Name" id="employee_name"/> <br><br>
+Employee Age     <input type="text" placeholder="Employee Age" id="employee_age"/> <br><br>
+Employee Email   <input type="text" placeholder="Employee Email" id="employee_email"/> <br><br>
+Employee Salary  <input type="text" placeholder="Employee Salary" id="employee_salary"/> <br><br>
+</td>
+
+
+</table>
+
+<button id="msgbtn">Save</button><br><br>
+  
+  <table id="emp-list" style="border-style: solid;">  
+    <tr style="border-style: solid;">  
+        <th style="border-style: solid;">Employee ID</th>  
+        <th style="border-style: solid;">Employee Name</th>  
+        <th style="border-style: solid;">Employee Email</th>  
+        <th style="border-style: solid;">Employee Age</th>  
+        <th style="border-style: solid;">Employee Salary</th> 
+        <th style="border-style: solid;">Action</th>  
+    </tr>   
+</table>
+</body>
+</html>
