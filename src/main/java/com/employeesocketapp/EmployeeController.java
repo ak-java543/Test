@@ -24,6 +24,7 @@ public class EmployeeController {
 	public List<Employee> addEmployee(@RequestBody Employee employee) {
 		employee.setEmployeeId(null);
 		employeeServices.addEmployee(employee);
+System.out.println("");
 		return listEmployees();
 	}
 
